@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+<div class="header">
+    <div class="header_container">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCxv9q4W2oORywHzOte9vvCFqGOr9v72gY2fZnp7D48z-4N3C7U2AGJpOA_r8Qx106c0Q&usqp=CAU" alt="Logo">
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li>
+                       <a href="index.html">Home Page</a>
+                    </li>
+                    <li>
+                        <a href="Categorypage.html">Category</a>
+                    </li>
+                    <li>
+                        <a href="Contactpage.html">Contact Us</a> 
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+    <div class="contact_us_body">
+        <div class="contac_us_container">
+            <h2>Contact Us</h2></br>
+            <form onsubmit="return false;" method="post" action="exercise1.html" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-lable">
+                    <label for="Contact purpose">Contact purpose</label>
+                </div>
+                <div class="form-field">
+                    <select name="Contact purpose" id="Contact purpose">
+                        <option value="support">I want to ask for support</option>
+                        <option value="refund">I want to ask for refund</option>
+                        <option value="buy">I want to buy books</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-label">
+                  <label for="name">Your name</label>
+                </div>
+                <div class="form-field">
+                  <input required id="name" type="text" name="name" maxlength="50">
+                </div>
+              </div>
+            
+            <div class="form-row">
+                <div class="form-label">
+                  <label for="email">Your email</label>
+                </div>
+                <div class="form-field">
+                  <input required id="email" type="email" name="email">
+                </div>
+              </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                  <label for="phone">Your phone</label>
+                </div>
+                <div class="form-field">
+                  <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-lable">
+                    <lable for="contact-you">How can we contact you</lable>
+                </div>
+                <div class="form-field">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="By email" name="By email" value="By email">
+                            <label for="By email">By email</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="By phone" name="By phone" value="By phone">
+                            <label for="By phone">By phone</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-lable">
+                    <lable for="receive-newsletter"> Do you want to receive our weekly newsletter</lable>
+                </div>
+                <div class="form-field">
+                    <input type="radio" id="yes" name="receive-newsletter" value="yes" checked="checked>
+                    <label for="yes"> Yes</label>
+                    </br>
+                    <input type="radio" id="no" name="receive-newsletter" value="no">
+                    <label for="no"> No</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label">
+                  <label for="Note">Note</label>
+                </div>
+                <div class="form-field">
+                  <textarea cols="60" rows="10" required id="Note" name="Note"></textarea>
+                </div>
+              </div>
+
+
+            <div class="form-row">
+                <input type="reset" value="   Reset   ">
+                <input type="submit" value="   Submit   ">
+              </div>
+            </form>
+        </div>
+    </div>
+</br>
+
+<div class="footer">
+    <div class="footer_container">
+        <div class="footer_detail">
+            <nav>
+                <ul>
+                    <li>
+                       <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="Contactpage.html">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">Copyright</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+    
+
+    
+
+</body>
+</html>
